@@ -9,6 +9,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 4;
+    overflow-x: hidden;
 
     .nav-container {
         width: 100%;
@@ -18,7 +19,8 @@ nav {
         align-items: end;
         justify-content: space-between;
         padding-bottom: 20px;
-        background: #f4acac;
+        padding: 0 15px 20px 15px;
+        overflow-x: hidden;
     }
     .logo {
         width: auto;
