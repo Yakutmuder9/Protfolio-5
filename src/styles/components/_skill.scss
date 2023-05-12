@@ -1,6 +1,137 @@
 .skill {
     width: 100%;
     height: auto;
-    min-height: 100vh;
-    background: #cbf087;
+
+    .skill-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        transform: translateY(45%);
+        z-index: 4;
+        position: relative;
+        // overflow: hidden;
+
+        .skill-left-side-card {
+            width: 33%;
+
+            @media (max-width: 768px) {
+                width: 45%;
+            }
+            button {
+                background: #171819;
+                display: flex;
+                align-items: center;
+                word-wrap: nowrap;
+                font-size: 14px;
+                padding: 5px 10px;
+                scale: 1.2;
+                @media (max-width: 768px) {
+                    scale: 0.8;
+                }
+                span {
+                    background: $dark-aquamarine;
+                    padding: 12px;
+                    border-radius: 50px;
+                    margin-left: 20px;
+                }
+            }
+            img {
+                height: 10vmin;
+                scale: 1.2;
+                margin-left: 20px;
+            }
+            .motion-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                width: 100%;
+                &:first-child {
+                    transform: translateX(8%);
+                    @media (max-width: 768px) {
+                        transform: translateX(5%);
+                    }
+                }
+            }
+            .design-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+        .skill-middle-img {
+            z-index: 4;
+            width: 30%;
+            padding-right: 5px;
+            img {
+                height: auto;
+                width: 100%;
+                scale: 1.1;
+                transform: translateY(-45%);
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        .skill-right-side-card {
+            width: 33%;
+            @media (max-width: 768px) {
+                width: 45%;
+            }
+            button {
+                background: #171819;
+                display: flex;
+                align-items: center;
+                word-wrap: nowrap;
+                font-size: 14px;
+                scale: 1.2;
+                padding: 5px 10px;
+                span {
+                    background: $dark-aquamarine;
+                    padding: 12px;
+                    border-radius: 50px;
+                    margin-right: 20px;
+                }
+                @media (max-width: 768px) {
+                    scale: 0.8;
+                }
+            }
+            img {
+                height: 10vmin;
+                margin-right: 20px;
+                scale: 1.2;
+            }
+            .motion-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                width: 100%;
+                &:first-child {
+                    transform: translateX(-8%);
+                    @media (max-width: 768px) {
+                        transform: translateX(5%);
+                    }
+                }
+            }
+            .design-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+    .wave-vid{
+        width: auto;
+        height: 250px;
+    }
+    video {
+        position: absolute;
+        left: 0px;
+        width: 102vw;
+    }
 }

@@ -1,10 +1,13 @@
+import { qand, question } from "../assets";
+import {FaAngleDown, FaAngleUp} from "react-icons/fa";
+
 const FAQs = () => {
   return (
     <div className="faqs">
       <div className="container">
         <div className="dollar-img">
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src={qand} alt="" />
+          <img src={question} alt="" />
         </div>
 
         <div className="faqs-header">
@@ -15,26 +18,27 @@ const FAQs = () => {
             questions/doubts you can always contact me below.
           </p>
         </div>
+
         <div className="faqs-accordian-container">
           <div className="faqs-card">
             <h6>What motivates me to design such amazing websites?</h6>
-            <img src="" alt="" />
+            <FaAngleDown />
           </div>
           <div className="faqs-card">
             <h6>What motivates me to design such amazing websites?</h6>
-            <img src="" alt="" />
+            <FaAngleDown />
           </div>
           <div className="faqs-card">
             <h6>What motivates me to design such amazing websites?</h6>
-            <img src="" alt="" />
+            <FaAngleDown />
           </div>
           <div className="faqs-card">
             <h6>What motivates me to design such amazing websites?</h6>
-            <img src="" alt="" />
+            <FaAngleDown />
           </div>
           <div className="faqs-card">
             <h6>What motivates me to design such amazing websites?</h6>
-            <img src="" alt="" />
+            <FaAngleDown />
           </div>
         </div>
       </div>

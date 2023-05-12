@@ -2,5 +2,102 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
-    background: #eadf8b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+   
+    @media(max-width: 768px){
+        padding-top: 0px;
+    }
+
+    .success-header {
+        font-size: 26px;
+        font-weight: 600;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 100px;
+                height: 70px;
+                transform: scaleX(1) rotate(30deg);
+                &:first-child {
+                    transform: scaleX(-1) rotate(30deg);
+                }
+
+                @media (max-width: 768px) {
+                    scale: 0.7;
+                }
+            }
+            h2 {
+                width: 50%;
+                margin-bottom: 10px;
+                @media (max-width: 768px) {
+                    width: 70%;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            width: 60%;
+            color: $dark-txt;
+            margin-bottom: 30px;
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+        }
+    }
+    .success-card-container {
+        display: flex;
+        gap: 12px;
+        padding-top: 20px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .success-card {
+            text-align: center;
+            margin-bottom: 30px;
+            &:nth-child(1){
+                transform: translateY(30px);
+            }
+            &:nth-child(3){
+                transform: translateY(30px);
+            }
+            .ligth-img{
+                width: 30%;
+                img{
+                    width: 100px;
+                }
+            }
+            img {
+                width: 50%;
+                margin-bottom: 15px;
+            }
+            h4 {
+                padding-top: 12px;
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+                padding: 15px 10% 10% 10%;
+                color: $dark-txt;
+                text-align: center;
+            }
+        }
+    }
+    .ligth-img {
+        position: absolute;
+    }
 }

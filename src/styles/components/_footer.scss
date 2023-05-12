@@ -1,6 +1,103 @@
 footer {
     width: 100%;
     height: auto;
-    min-height: 100vh;
-    background: #8beabe;
+    padding-top: 40px;
+    overflow-y: hidden;
+    border-bottom: 5px solid red;
+
+    .container {
+        padding-right: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        gap: 20%;
+        padding-left: 6%;
+        padding-right: 6%;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .footer-side-text {
+            padding-top: 30px;
+            width: 100%;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                top: 0;
+                left: 0;
+                transform: translateX(-40%);
+                background-image: url(../../assets/18.jpg);
+                background-size: cover;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                color: $dark-txt;
+                padding: 20px 0px;
+            }
+            .footer-btns {
+                display: flex;
+                gap: 20px;
+                padding-bottom: 40px;
+                button {
+                    padding: 15px 20px;
+                }
+            }
+        }
+
+        .footer-form {
+            width: 100%;
+            background: linear-gradient(180deg, #262626 0%, #010101 100%);
+            border-radius: 25px;
+            margin: 50px 0px 80px 0px;
+            padding: 20px 25px 20px 25px;
+
+            @media(max-width: 992px) {
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            .form-row {
+                margin-bottom: 30px;
+                p {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+                input {
+                    width: 100%;
+                    padding: 15px 15px;
+                    outline: none;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    border: none;
+                    color: #010101;
+                }
+               
+                .message-inp {
+                    width: 100%;
+                    padding: 15px 15px;
+                    outline: none;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    border: none;
+                    color: #010101;
+                }
+            }
+            .btn {
+                width: 100% !important;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    .footer-wave {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background: $navy;
+    }
 }

@@ -19,6 +19,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    color: #ffffff;
 }
 
 /*---Side Scroll Bar ---*/
@@ -29,7 +30,7 @@
     background: #010101;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #2876fc00 0%, #c4fd59 100%);
+    background: linear-gradient(135deg, #2876fc00 0%, #258d67 100%);
     border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -40,6 +41,7 @@ body {
     width: 100vw;
     height: auto;
     overflow-x: hidden;
+    font-family: "Inter", sans-serif;
 }
 
 .App {

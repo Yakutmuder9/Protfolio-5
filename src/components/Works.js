@@ -1,3 +1,5 @@
+import { pkPro, blPro, ogPro, gdPro, prPro } from "../assets";
+
 const Works = () => {
   return (
     <div className="works">
@@ -6,6 +8,7 @@ const Works = () => {
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
+
         <div className="work-header">
           <h2>Some of my previous work</h2>
           <p>
@@ -17,9 +20,9 @@ const Works = () => {
 
         <div className="work-cards-container">
           <div className="work-card">
-            <img src="" alt="" />
+            <img src={blPro} alt="" />
             <div className="work-card-text-cont">
-              <h4>My previous portfolio v.1 </h4>
+              <h3>My previous portfolio v.1 </h3>
               <p>
                 I had planned for a simple layout yet very modern and
                 minimalasatic to help me explain all my work and process and the
@@ -28,9 +31,9 @@ const Works = () => {
             </div>
           </div>
           <div className="work-card">
-            <img src="" alt="" />
+            <img src={ogPro} alt="" />
             <div className="work-card-text-cont">
-              <h4>My previous portfolio v.1 </h4>
+              <h3>My previous portfolio v.1 </h3>
               <p>
                 I had planned for a simple layout yet very modern and
                 minimalasatic to help me explain all my work and process and the
@@ -39,9 +42,10 @@ const Works = () => {
             </div>
           </div>
         </div>
+
         <div className="slide-work-container">
-          <div>
-            <img src="" alt="" />
+          <div className="slide-card">
+            <img src={gdPro} alt="" />
             <div className="work-card-text-cont">
               <h4>My previous portfolio v.1 </h4>
               <p>
@@ -51,8 +55,8 @@ const Works = () => {
               </p>
             </div>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div className="slide-card">
+            <img src={pkPro} alt="" />
             <div className="work-card-text-cont">
               <h4>My previous portfolio v.1 </h4>
               <p>
@@ -62,8 +66,8 @@ const Works = () => {
               </p>
             </div>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div className="slide-card">
+            <img src={prPro} alt="" />
             <div className="work-card-text-cont">
               <h4>My previous portfolio v.1 </h4>
               <p>
